@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+* {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
