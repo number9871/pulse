@@ -16,6 +16,11 @@
             font-size: 32px;
         }
     }
+    .carousel {
+        button {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -31,6 +36,25 @@
         }
         &__descr {
             font-size: 16px;
+        }
+    }
+    .carousel {
+        &__inner {
+            img {
+                width: 650px;
+                max-height: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 180px;
+            font-size: 15px;
+        }
+    }
+    .reviews {
+        .container {
+            max-width: 700px;
         }
     }
 }
@@ -94,6 +118,54 @@
             justify-content: center;
         }
     }
+    .carousel {
+        padding: 30px 0;
+        &__inner {
+            img {
+                width: 500px;
+                max-height: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 30px;
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 140px;
+            font-size: 13px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+        &-item {
+            width: 270px;
+            padding: 20px 10px 20px 10px;
+            &__wrapper {
+                width: calc(200% + 20px);
+            }
+            &__content_active {
+                margin-right: 10px;
+            }
+            &__list {
+                padding: 0 10px 0 15px;
+            }
+        }
+    }
+    .reviews {
+        padding-bottom: 40px;
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__img {
+            margin: 0 0 20px 60px;
+        }
+        &__descr {
+            padding-right: 60px;
+        }
+    }
 }
 @media (max-width: 425px) {
     .promo {
@@ -127,5 +199,19 @@
     }
     .title {
         font-size: 27px;
+    }
+    .carousel {
+        &__inner {
+            img {
+                width: 400px;
+                max-height: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 110px;
+            font-size: 11px;
+        }
     }
 }
