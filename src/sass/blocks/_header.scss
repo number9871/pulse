@@ -35,8 +35,9 @@
         line-height: 18px;
         color: #FFFFFF;
         &:hover {
-            color: fff;
+            color: #fff;
             text-decoration: none;
+            text-shadow: 2px 2px 5px #000;
         }
     }
     &__contacts {
