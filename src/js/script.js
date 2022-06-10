@@ -15,7 +15,7 @@
 //     });
 //   });
 
-
+//Slider
 const slider = tns({
 	container: '.carousel__inner',
 	slideBy: 'page',
@@ -31,7 +31,7 @@ document.querySelector('.prev').addEventListener('click', function () {
   document.querySelector('.next').addEventListener('click', function () {
 	slider.goTo('next');
   });
-
+//Catalog tabs
   (function($) {
 	$(function() {
 	  $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -53,4 +53,20 @@ document.querySelector('.prev').addEventListener('click', function () {
 
 	toggleSlide ('.catalog-item__link');
 	toggleSlide ('.catalog-item__back')
-})(jQuery);
+
+  //Modal
+	$('[data-modal=consultation]').on('click', function(){
+		$('.overlay, #consultation').fadeIn('fast');
+	});
+	$('.modal__close').on('click', function() {
+		$('.overlay, #consultation, #thanks, #order').fadeOut('fast')
+	});
+
+	$('.button_mini').each(function(i) {
+		$(this).on('click', function() {
+			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('fast');
+		})
+	});
+  })(jQuery);
+  
