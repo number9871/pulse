@@ -34,4 +34,11 @@
             color: #FF0000;
         }
     }
+    &__icon {
+        &_animated {
+            &:hover {
+                animation: hearthbeat 2s ease infinite;
+            }
+        }
+    }
 }

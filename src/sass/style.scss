@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
 @import 'base/variables';
+@import 'base/animations';
 
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
@@ -24,5 +25,6 @@ a {
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 
 @import 'base/media';
